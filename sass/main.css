@@ -1,0 +1,74 @@
+/*
+## Colors
+
+- White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%)
+*/
+:root {
+  --color-primary: hsl(220, 15%, 55%);
+  --color-primary-dark: hsl(218, 44%, 22%);
+  --color-primary-light: hsl(212, 45%, 89%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: outfit, sans-serif;
+  max-width: 144rem;
+  margin: auto;
+  background-color: var(--color-primary-light);
+}
+
+.qr {
+  max-width: 32rem;
+  margin: 15rem auto;
+}
+.qr__container {
+  background-color: var(--color-white);
+  padding: 2rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+.qr__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+}
+.qr__text {
+  width: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.qr__heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+}
+.qr__paragraph {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+}
